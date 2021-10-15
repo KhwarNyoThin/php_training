@@ -1,0 +1,26 @@
+
+body {
+  width: 960px;
+  margin: 50px auto;
+}
+
+.chess-board {
+  margin: auto;
+  width: 480px;
+  height: 480px;
+  border: 1px solid #000000;
+  padding: 0;
+  border-collapse: collapse;
+}
+
+.black {
+  width: 12.5%;
+  height: 12.5%;
+  background: #000000;
+}
+
+.white {
+  width: 12.5%;
+  height: 12.5%;
+  background: #ffffff;
+}

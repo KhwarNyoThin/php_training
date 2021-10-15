@@ -1,0 +1,32 @@
+body {
+  width: 960px;
+  margin: 50px auto;
+}
+
+.age-calculation {
+  margin: auto;
+  width: fit-content;
+}
+
+.input-box {
+  width: fit-content;
+  margin: 20px auto;
+}
+input {
+  font-size: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+p,h2 {
+  text-align: center;
+}
+.dob {
+  color: blueviolet;
+  font-size: 20px;
+}
+
+.age {
+  color: purple;
+  font-size: 25px;
+}

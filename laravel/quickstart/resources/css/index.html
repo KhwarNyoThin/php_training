@@ -1,0 +1,41 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Laravel Quickstart - Basic</title>
+    <link rel="stylesheet" href="css/style.css">
+      <!-- CSS And JavaScript -->
+  </head>
+
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-default clearfix">
+        <h3 class="task">Task List</h3>
+        <div class="menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+
+      <div class="task-blk">
+        <div class="title">New Task</div>
+        <form class="new-task">
+          <label>Task</label> <br>
+          <input class="task-input" type="text" name="new-task"> <br>
+          <input class="add-task" type="submit" name="add" value="+ Add Task"> <br>
+        </form>
+      </div>
+
+      <div class="task-blk">
+        <div class="title">Current Task</div>
+        <div class="current-task">
+          <p>Task</p>
+        </div>
+      </div>
+    </div>
+
+      <!-- @yield('content') -->
+  </body>
+</html>

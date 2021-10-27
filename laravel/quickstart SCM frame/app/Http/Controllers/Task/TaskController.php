@@ -10,14 +10,14 @@ use App\Http\Requests\TaskValidateRequest;
 class TaskController extends Controller
 {
     //task interface
-    private $taskInterface;
+    private $taskService;
 
     /**
      * TaskController Constructor
      */
-    public function __construct(TaskServiceInterface $taskInterface)
+    public function __construct(TaskServiceInterface $taskService)
     {
-        $this->taskInterface = $taskInterface;
+        $this->taskService = $taskService;
     }
 
     /**
@@ -25,7 +25,7 @@ class TaskController extends Controller
      * @return array of task
      */
     public function displayTask() {
-        $task = $this->taskInterface->displayTask();
+        $task = $this->taskService->displayTask();
         return view('tasks', [
             'tasks' => $task
         ]);
@@ -38,7 +38,7 @@ class TaskController extends Controller
      */
     public function addTask(TaskValidateRequest $request) {
         $validate = $request->validated();
-        $task = $this->taskInterface->addTask($validate);
+        $task = $this->taskService->addTask($validate);
         return redirect('/');
     }
 
@@ -50,7 +50,7 @@ class TaskController extends Controller
     public function deleteTask($id)
     {
 
-        $delete = $this->taskInterface->deleteTask($id);
+        $delete = $this->taskService->deleteTask($id);
         return redirect('/');
     }
 }

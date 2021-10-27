@@ -1,0 +1,110 @@
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+  visibility: hidden;
+  font-size: 0;
+}
+
+body {
+	width: 960px;
+	margin: 50px auto;
+}
+
+.container {
+	width: 50%;
+	margin: auto;
+}
+
+.navbar {
+	width: 94%;
+	margin: auto;
+  color: rgb(158, 154, 154);
+  background: rgb(243, 241, 241);
+  border: 1px solid rgb(206, 199, 199);
+  padding: 0 3%;
+  position: relative;
+}
+
+.task {
+	float: left;
+}
+
+.menu-border {
+  padding: 2%;
+  
+  float: right;
+}
+.menu-btn,
+.menu-btn span {
+  display: inline-block;
+  transition: all .4s;
+  box-sizing: border-box;
+}
+
+.menu-btn {
+  position: absolute;
+  right: 5.5%;
+  top: 30%;
+  width: 45px;
+  height: 30px;
+  background: none;
+  border: none;
+  appearance: none;
+  cursor: pointer;
+  border: 1px solid rgb(158, 154, 154);
+  border-radius: 5px;
+  padding: 0 2%;
+}
+
+.menu-btn span {
+  position: absolute;
+  width: 60%;
+  height: 2px;
+  background-color: rgb(158, 154, 154);
+  
+}
+
+.menu-btn span:nth-child(1) {
+  top: 15%;
+}
+
+.menu-btn span:nth-child(2) {
+  top: 47%;
+}
+
+.menu-btn span:nth-child(3) {
+  bottom: 15%;
+}
+
+.task-blk {
+  width: 90%;
+  margin: 20px auto;
+  border: 1px solid rgb(206, 199, 199);
+  border-radius: 7px;
+  
+}
+
+.new-task {
+  padding: 15px;  
+}
+.title {
+  color: rgb(158, 154, 154);
+  background: rgb(243, 241, 241);
+  padding: 10px;
+}
+
+.task-input {
+  width: 100%;
+  padding: 10px 0;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid rgb(206, 199, 199);
+}
+
+.add-task {
+  background: #ffffff;
+  padding: 7px;
+  margin: 10px 0;
+  border: 1px solid rgb(206, 199, 199);
+}

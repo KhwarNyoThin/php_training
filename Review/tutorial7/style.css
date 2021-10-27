@@ -1,0 +1,26 @@
+img {
+  width: 200px;
+  height: 200px;
+}
+label {
+  font-size: 20px;
+    color: brown;
+}
+input {
+  margin-top: 20px;
+  font-size: 20px;
+}
+form {
+  margin-left: 20px;
+}
+p {
+  color: red;
+  margin-left: 20px;
+}
+.submit {
+  font-size: 15px;
+  background-color: beige;
+  padding: 3px 12px;
+  display: block;
+  border-radius: 7px;
+}

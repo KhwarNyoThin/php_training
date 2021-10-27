@@ -1,0 +1,76 @@
+body {
+  width: 960px;
+  margin: 50px auto;
+  font-size: 18px;
+  color: rgb(128, 128, 128);
+}
+
+.operation {
+  width: 80%;
+}
+.op-btn {
+  width: 20%;
+  padding: 10px 0;
+  color: rgb(247, 114, 6);
+  background: #ffffff;
+  border: 1px solid rgb(247, 114, 6);
+  margin: 10px 0;
+}
+
+.op-btn:hover,
+.op-btn.active {
+  background: rgb(247, 114, 6);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.active {
+  background: rgb(247, 114, 6);
+  color: #ffffff;
+}
+
+
+.edit-blk {
+  line-height: 1.8;
+  display: none;
+  padding: 20px;
+  margin: 10px 0;
+  color: rgb(128, 128, 128);
+  border: 1px solid rgb(128, 128, 128);
+}
+
+input[type="text"] {
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  padding: 5px 10px;
+  color: rgb(128, 128, 128);
+  background: #ffffff;
+  border: 1px solid rgb(128, 128, 128);
+}
+
+input[type="submit"]:hover {
+  color: #ffffff;
+  background: rgb(128, 128, 128);
+  cursor: pointer;
+}
+
+.result-txt {
+  font-size: 20px;
+  color: rgb(240, 17, 17);
+  background: rgba(223, 221, 221, 0.925);
+  padding: 20px 10px;
+}
+
+.student-info {
+  table-layout: auto;
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+
+td,
+th {
+  padding: 15px 20px;
+  border: 1px solid black;
+}

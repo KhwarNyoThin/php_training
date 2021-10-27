@@ -1,0 +1,49 @@
+body {
+  width: 960px;
+  margin: 50px auto;
+  color: #c52261;
+  font-size: 18px;
+}
+
+.login-form {
+  width: 25%;
+  margin: auto;
+}
+
+input {
+  font-size: 18px;
+  width: 100%;
+  padding: 5px 10px;
+  margin: 10px 0;
+  border: 1px solid #c52261;
+}
+
+input[type="submit"] {
+  width: fit-content;
+  color: #c52261;
+  background: #ffffff;
+  border-radius: 7px;
+}
+
+.logout-block {
+  text-align: center;
+}
+
+.logout a {
+  padding: 7px;
+  text-decoration: none;
+  color: #c52261;
+  border: 1px solid #c52261;
+  border-radius: 5px;
+}
+
+.logout {
+  margin: 40px 0;
+}
+
+.logout a:hover,
+input[type="submit"]:hover {
+  cursor: pointer;
+  color: #ffffff;
+  background: #c52261;
+}

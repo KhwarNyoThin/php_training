@@ -11,12 +11,15 @@
 
   <?php 
       $upload = false;
-      if(isset($_POST["upload"])) { // if click the upload button
+
+      // if click the upload button
+      if(isset($_POST["upload"])) { 
         $folder = $_POST["folder"];
         $image = $_FILES["image"];
         $success = "";
         
-        if($folder == NULL || $image == NULL){ // if folder or image is empty
+        // if folder or image is empty
+        if($folder == NULL || $image == NULL){ 
           echo "<script>alert('Fill the required data')</script>";
         }
         else {          
@@ -24,14 +27,17 @@
           $file_name = $_FILES['image']['name'];
           $file_ext = pathinfo($_FILES["image"]["name"])['extension'];
 
-          if(in_array($file_ext, $extension) === false) { // only the jpg and png are allowed
+          // only the jpg and png are allowed
+          if(in_array($file_ext, $extension) === false) { 
             echo "<script>alert('Only JPEG and PNG files are allowed')</script>";
           }
           else {
             mkdir($folder);
             $source = $_FILES['image']['tmp_name'];
             $destination = $folder."/".$file_name;
-            if(copy($source, $destination)) {  // copy the file to the destination folder
+
+            // copy the file to the destination folder
+            if(copy($source, $destination)) {  
               echo "<div class=result>Uploaded successfully to the folder '$folder'</div>";
             }
             else {

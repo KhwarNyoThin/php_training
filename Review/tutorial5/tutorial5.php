@@ -15,9 +15,13 @@
 
   <?php 
     include "phpexcelreader/excel_reader.php";
-    if(isset($_POST["upload"]) ) { // if click the upload button
+    
+    // if click the upload button
+    if(isset($_POST["upload"]) ) { 
       $file = $_FILES["file"];
-      if($file["name"] === "") { // check if the file is chosen or not
+
+      // check if the file is chosen or not
+      if($file["name"] === "") { 
         echo "<div class=result>choose the file first!</div>";
       } 
       else {
@@ -26,7 +30,8 @@
         $source = $_FILES["file"]["tmp_name"];
         $destination = "fileToOpen/".$file_name;
 
-        if(copy($source, $destination)) {  // copy the file to the destination folder
+        // copy the file to the destination folder
+        if(copy($source, $destination)) {  
           echo "Uploaded successfully to the folder 'fileToOpen'";
         }
         $file = fopen("fileToOpen/$file_name", "r");
@@ -46,7 +51,9 @@
         }
         else {
           if($file) {
-            while (!feof($file)) {  // read line by line from txt file
+
+            // read line by line from txt file
+            while (!feof($file)) {  
               $content .= fgets($file). "<br>";
             }
             fclose($file);         

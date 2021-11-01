@@ -21,6 +21,7 @@
             <button class="btn btn-primary mb-2 search-btn" id="search-click">Search</button>
             <a class="btn btn-primary header-btn" href="/product/create">{{ __('Create') }}</a>
             <a class="btn btn-primary header-btn" href="/product/upload">{{ __('Upload') }}</a>
+            <a class="btn btn-primary header-btn" href="/product/download">{{ __('Download') }}</a>
           </div>
           <table class="table table-hover" id="product-list">
             <thead>

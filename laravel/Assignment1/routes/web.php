@@ -66,3 +66,7 @@ Route::post('/product/upload', [ProductController::class, 'submitProductUploadVi
 
 Route::get('/sale/upload', [SaleController::class, 'showSaleUploadView'])->name('sale.upload');
 Route::post('/sale/upload', [SaleController::class, 'submitSaleUploadView'])->name('sale.upload');
+
+Route::get('/customer/download', [CustomerController::class, 'downloadCustomerCSV'])->name('downloadCustomerCSV');
+Route::get('/product/download', [ProductController::class, 'downloadProductCSV'])->name('downloadProductCSV');
+Route::get('/sale/download', [SaleController::class, 'downloadSaleCSV'])->name('downloadSalesCSV');
